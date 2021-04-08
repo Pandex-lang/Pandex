@@ -1,6 +1,9 @@
 #include <iostream>
 
+using std;
+
 int main(){
-  cout << "Pandex programming language";
+  cout << "Index programming language";
+  cout << "Pandex : Main Index Implementation ";
   return 0;
 }
