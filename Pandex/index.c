@@ -118,7 +118,7 @@ int main(){
 
             v_i+=1;  
         }
-        /* end */
+        // end
         token = strtok(NULL, "\n");
     }
     return 0;
