@@ -1,2 +1,2 @@
 cd Pandex
-gcc index.c
+gcc index.c -o Pandex
