@@ -28,4 +28,4 @@ or in windows :
 ```.\build.bat```
 
 **How to execute**
-```Pandex {{code}}```
+```Pandex intoc```
