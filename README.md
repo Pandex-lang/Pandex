@@ -28,4 +28,7 @@ or in windows :
 ```.\build.bat```
 
 **How to execute**
+```Pandex {{code}}```
+
+***For Example***
 ```Pandex intoc```
