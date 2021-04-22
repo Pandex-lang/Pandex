@@ -9,8 +9,6 @@ void comment(char*str){
         }else if(str[i] == ';'){
             cmnt_s=1;
         }
-        /*cmnt_s=0;
-        if(str[i]==';' && !cmnt_s)cmnt_s=1;*/
         if(cmnt_s)str[i]=0x7F;
         i++;
     }
