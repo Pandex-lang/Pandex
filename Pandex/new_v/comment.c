@@ -1,3 +1,5 @@
+#include "filer.c"
+/* comment deleter function named comment */
 void comment(char*str){
     // this function delete comments in code //
     int i=0;
@@ -9,6 +11,8 @@ void comment(char*str){
         }else if(str[i] == ';'){
             cmnt_s=1;
         }
+        /*cmnt_s=0;
+        if(str[i]==';' && !cmnt_s)cmnt_s=1;*/
         if(cmnt_s)str[i]=0x7F;
         i++;
     }
