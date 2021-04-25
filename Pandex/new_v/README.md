@@ -45,8 +45,8 @@ function:
 6 - variables
 ```
 main:
-	var [name] [ "Hello , World" ; constant variables]
-	var name "Hello World ; variable
+	var [name] : "Hello , World" ; constant variables
+	var name : "Hello World ; variable
 	; access variables
 	; constants
 	puts $name ; print variables
