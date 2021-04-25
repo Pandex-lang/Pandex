@@ -1,4 +1,4 @@
-#include "str.h"
+#include "str.c"
 /* this function get the file name 
 and convert file to string or array 
 of characters like following file

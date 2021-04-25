@@ -1,7 +1,7 @@
 /* this file have all of string function that don't exits
 int string.h header and is required for processing in the
 strings like slicing */
-#include "deps.h"
+#include "deps.c"
 
 void slice_str(char*str,char*slice,int start,int end){
     /* this function is like slice method in javascript
