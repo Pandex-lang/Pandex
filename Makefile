@@ -4,13 +4,13 @@
 
 cc = gcc
 program=Pandex.c
-#flags = 
+flags = -I ./include
 convert = Pandex
 
 all: path
 
 build: 
-	$(cc) $(flags) -o $(convert)
+	$(cc) $(program) $(flags) -o $(convert)
 	
 path: build
 	export PATH=$PATH:pwd	

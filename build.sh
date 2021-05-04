@@ -9,8 +9,8 @@
 
 cc='gcc'
 program="Pandex.c"
-#flags=''
+flags='-I ./include'
 convert="Pandex"
 
-$cc $flags -o $convert;
+$cc $flags $program -o $convert;
 export PATH=$PATH:pwd
