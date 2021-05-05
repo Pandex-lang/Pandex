@@ -11,3 +11,5 @@ Pandex is a light but FAST programming language written in C . Pandex goal is th
 # ***Three week delay in the project***
 
 School quizzes starts & I am student that means three week delay.
+
+# comments are after ;

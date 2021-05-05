@@ -31,11 +31,6 @@
 
 // end
 
-void x(int status){
-    // exit program with status code
-    exit(status);
-}
-
 typedef unsigned long int uli;
 
 struct Info {
@@ -47,13 +42,18 @@ struct Info {
 
     // lexer ouput data
     //char x = y;
-
+    FILE *fl;
     struct Vars {
         char*vars[1024];
         char*values[1024];
     }vars;
     
 } info;
+
+void x(int status){
+    // exit program with status code
+    status == -1 ? exit(0) : fputs("[quit]",info.fl);
+}
 
 int locateOfVar(char*var){
     // this function find location of\
@@ -68,7 +68,8 @@ int locateOfVar(char*var){
 }
 
 void lex(char *str){
-    FILE *fp = fopen("Pandex.lex","w");
+    info.fl = fopen("Pandex.lex","w");
+    FILE *fp = info.fl;
     
     putc('[',fp);
 
@@ -95,7 +96,7 @@ void lex(char *str){
                     index_str(tok, ' ');
             }
 
-            if(!strcmp(tok,"\t:q")){
+            if(!strcmp(tok,"\tq")){
                 // quit
                 x(0);
             }
@@ -106,8 +107,7 @@ void lex(char *str){
                 slice_str(
                     tok,
                     info.current_fn,
-                    index_str(tok,':')+1,
-                    strlen(tok)-1
+                    0 , index_str(tok,':')
                 );
 
                 fprintf(fp,"[%ld:fn:%s]",info.line,info.current_fn);
@@ -134,7 +134,7 @@ void lex(char *str){
 }
 
 int main(){
-    char str[1024] = "H:\t$1\ne\nl\no\n";
+    char str[1024] = "main:\n\tq";
     lex(str);
     return 0;
 }
