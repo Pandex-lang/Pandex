@@ -1,2 +1,4 @@
-# codes
-build.cmd @hasan-kashi
+# code
+
+build.cmd        @hasan-kashi
+build.sh         @hasan-kashi
