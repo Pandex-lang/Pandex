@@ -1,2 +1,2 @@
 -- for windows
-@hasan-kashi complete this file like build.sh
+@hasan-kashi complete this file like build.sh file
