@@ -2,6 +2,7 @@
 Pandex is a light but FAST programming language written in C . Pandex goal is that be hard &amp; it's good for eductional goals 
 
 ![badge](https://tokei.rs/b1/github/Pandex-lang/Pandex)
+
 **How To Memebr In Pandex-lang**
 * 10 first person star this repository (step 1)
 * 15 other peoples that send pull request ( step 2)
