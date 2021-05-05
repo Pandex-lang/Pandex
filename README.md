@@ -6,5 +6,6 @@ Pandex is a light but FAST programming language written in C . Pandex goal is th
 * 15 other peoples that send pull request ( step 2)
 * anyone send a merged pull request
 
-***Three week delay in the project***
+# ***Three week delay in the project***
+
 School quizzes starts & I am student that means three week delay.
