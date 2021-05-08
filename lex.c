@@ -134,7 +134,7 @@ void lex(char *str){
 }
 
 int main(){
-    char str[1024] = "main:\n\tq";
+    char str[1024] = "main:\n\tq\n\n";
     lex(str);
     return 0;
 }
