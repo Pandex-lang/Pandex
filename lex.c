@@ -52,7 +52,7 @@ struct Info {
 
 void x(int status){
     // exit program with status code
-    status == -1 ? exit(0) : fputs("[quit]",info.fl);
+    status == -1 ? exit(0) : fputs("[quitY]",info.fl);
 }
 
 int locateOfVar(char*var){
