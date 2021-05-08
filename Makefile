@@ -7,6 +7,10 @@ program=Pandex.c
 flags = -I ./include
 convert = Pandex
 
+default:
+	gcc lex.c -o l
+	./l
+
 all: path
 
 build: 
