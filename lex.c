@@ -31,6 +31,8 @@
 
 // end
 
+char slice_me[1024];
+
 typedef unsigned long int uli;
 
 struct Info {
@@ -52,15 +54,15 @@ struct Info {
 
 void x(int status){
     // exit program with status code
-    status == -1 ? exit(0) : fputs("[quitY]",info.fl);
+    status == -1 ? exit(0) : fputs("[quit]",info.fl);
 }
 
-int locateOfVar(char*var){
+int locateOfVar(char var[]){
     // this function find location of\
      variable in the vars[] array
 
     for(int i=0;i>=1024;i++){
-        if(info.vars.vars[i] == var)
+        if(!strcmp(info.vars.vars[i], var))
             return i;
     }   
 
@@ -91,14 +93,26 @@ void lex(char *str){
             }
 
             if(strstr(tok , "$") || strstr(tok , "&")){
-                if(strstr(tok , "$"))
-                    index_str(tok, '$');
-                    index_str(tok, ' ');
+                if(strstr(tok , "$")){
+                    slice_str(tok,slice_me,
+                    index_str(tok,'$'),
+                    (index_str(tok,' ') == -1 ? \
+                    (index_str(tok,',') == -1 ? \
+                    index_str(tok , '\n') : \
+                    index_str(tok,',')) : \
+                    index_str(tok,' ')));
+                    
+                    fprintf(fp,"[%ld:variable:%s]",info.line,slice_me);
+                }
             }
 
             if(!strcmp(tok,"\tq")){
                 // quit
                 x(0);
+            }
+
+            if(strstr(tok,"var ")){
+                // add variable to variables
             }
                    
         }else if(strstr(tok,":")){
@@ -134,7 +148,7 @@ void lex(char *str){
 }
 
 int main(){
-    char str[1024] = "main:\n\tq\n\n";
+    char str[1024] = "main:\n\tq\n\t\n\t$as";
     lex(str);
     return 0;
 }

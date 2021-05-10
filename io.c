@@ -34,7 +34,7 @@ void fileToText(char name[] , char slice[]){
 
 void fileLen(char name[]){
     FILE *fp = fopen(name,"r");
-    fseek(fp , 0 , SEEK_END);
+    fseek(fp , 0 , 2); // #def seek_end 2
     file.len = ftell(fp);
     fclose(fp);
 }

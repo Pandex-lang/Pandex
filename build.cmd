@@ -1,1 +1,2 @@
-gcc Pandex.c -o Pandex
+-- for windows
+@hasan-kashi complete this file

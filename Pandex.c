@@ -1,5 +1,1 @@
-// Pandex executor
-
-int main(){
-  return 0;
-}
+// Pandex language executor
