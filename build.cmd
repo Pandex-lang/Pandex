@@ -1,2 +1,1 @@
--- for windows
-@hasan-kashi complete this file like build.sh file
+gcc Pandex.c -o Pandex
