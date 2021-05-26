@@ -1,0 +1,12 @@
+main:
+  var x
+  var y
+  
+  mov x , y
+  inc x
+  add y
+  
+  call puts ( "Hello , World" )
+  
+  ret
+  ;  comment
