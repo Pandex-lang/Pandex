@@ -1,2 +1,0 @@
-How Do You Select ?
-Pandex.lex: ["How do you select"]
