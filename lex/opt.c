@@ -17,7 +17,8 @@ void comment(char*str){
         }
         /*cmnt_s=0;
         if(str[i]==';' && !cmnt_s)cmnt_s=1;*/
-        if(cmnt_s)str[i]=0x7F;
+        if(cmnt_s)
+                str[i]=0x7F;
         i++;
     }
 }
