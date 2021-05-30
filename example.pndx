@@ -1,0 +1,13 @@
+; an example Pandex source
+
+.import `string`::puts,strlen
+
+main: ; main function
+    var result%b ; %b = boolean
+    var length%d ; %d = integer
+    call strlen ($1 , &length)
+    if result then call puts ($ , $length)
+
+another:
+    ; new version
+    call puts ( $0 ) ; 'another`
