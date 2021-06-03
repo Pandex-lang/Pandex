@@ -5,6 +5,10 @@
 #   include <stdbool.h>
 #endif
 
+#ifndef _STDDEF_H
+#   include <stddef.h>
+#endif
+
 #define alpha 0 // if character is alpha like a:b:c:d
 #define number 1 // if character is number 1:2:3
 #define token 2 // if character is token \
@@ -55,12 +59,42 @@
 #define FOR_KWD 59
 #define WHILE_KWD 60
 
-bool isAlpha(char); // check if ch is in alphabet
-bool isNumeric(char); // check if ch is a number
+// number
+// +
+#define NUM_0 70 // 0
+#define NUM_1 71 // 1
+#define NUM_2 72 // 2
+#define NUM_3 73 // 3
+#define NUM_4 74 // 4
+#define NUM_5 75 // 5
+#define NUM_6 76 // 6
+#define NUM_7 77 // 7
+#define NUM_8 78 // 8
+#define NUM_9 79 // 9
+// -
+#define NNUM_0 80
+#define NNUM_1 81
+#define NNUM_2 82
+#define NNUM_3 83
+#define NNUM_4 84
+#define NNUM_5 85
+#define NNUM_6 86
+#define NNUM_7 87
+#define NNUM_8 88
+#define NNUM_9 89
 
-int getCharTok(char); // get the char token id ( e.g if ch=='~' return T_TILDE=10)
-int getCharType(char); // check if is alpha , numeric or token
+bool isAlpha(const char); // check if ch is in alphabet
+bool isNumeric(const char); // check if ch is a number
 
-int scan(const char[],const int);
+int getCharTok(const char); // get the char token id \
+( e.g if ch=='~' return T_TILDE=10)
+int getCharType(const char); // check if is alpha , numeric or token
+int getCharNum(const char , const bool isNegative);
+
+int _scan(const char);
+
+int scan(const char);
+
+int scan_kwd(const char[]);
 
 #endif

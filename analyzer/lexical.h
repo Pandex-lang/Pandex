@@ -16,17 +16,17 @@ enum operand {
     TILDE=T_TILDE,
     ACUTE , BANG ,
     AT , SHARP ,
-    DOLLAR , 
+    DOLLAR ,
     PERCENT , CARET
     , AND , STAR ,
     LPAREN , RPAREN ,
-    MINUS , UNDERSCORE 
-    , PLUS , EQ , 
-    OBRACKET , 
+    MINUS , UNDERSCORE
+    , PLUS , EQ ,
+    OBRACKET ,
     CBRACKET ,
     OBRACE , CBRACE ,
     OR , BACKSLASH ,
-    FORWARDSLASH , 
+    FORWARDSLASH ,
     COLON , SEMICOLON
     , SINGLECOUTE ,
     DOUBLEQOUTE ,
@@ -36,13 +36,12 @@ enum operand {
 
     ,
 
-    
 };
 
 
 struct Tokenizer
 {
-    
+
     struct Tokenizer *next;
     struct Tokenizer *prev;
 };
