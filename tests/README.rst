@@ -24,7 +24,7 @@ about makefile
 ~~~~~~~~~~~~~~~
 
 1) variables
-	- `$(CC)` : `$cc` hold the compiler ( e.g CC=gcc or CC=clang )
+	- :code:`$(CC)` : `$cc` hold the compiler ( e.g CC=gcc or CC=clang )
 	- `$(ROOT_PATH)` : it's hold relative root path so if you go there from here , you are in root
 	- `$(TEST_OUTPUT)` : name of executable file or `$(CC) files.(o|c) -o $(TEST_OUTPUT)`
 	- `$(OBJECTS)` : `.o` CC output names
