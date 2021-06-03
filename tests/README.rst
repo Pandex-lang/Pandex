@@ -24,9 +24,9 @@ about makefile
 ~~~~~~~~~~~~~~~
 
 1) variables
-	- :code:`$(CC)` : `$cc` hold the compiler ( e.g CC=gcc or CC=clang )
-	- `$(ROOT_PATH)` : it's hold relative root path so if you go there from here , you are in root
-	- `$(TEST_OUTPUT)` : name of executable file or `$(CC) files.(o|c) -o $(TEST_OUTPUT)`
-	- `$(OBJECTS)` : `.o` CC output names
-	- `$(MAIN_TARGET_DEPS)` : makefile main | default | all target needs targets executed before 
-	- `$(TEST_STATUS)` : type of test will execute
+	- :code:`$(CC)` : :code:`$cc` hold the compiler ( e.g CC=gcc or CC=clang )
+	- :code:`$(ROOT_PATH)` : it's hold relative root path so if you go there from here , you are in root
+	- :code:`$(TEST_OUTPUT)` : name of executable file or :code:`$(CC) files.(o|c) -o $(TEST_OUTPUT)`
+	- :code:`$(OBJECTS)` : :code:`.o` CC output names
+	- :code:`$(MAIN_TARGET_DEPS)` : makefile main | default | all target needs targets executed before 
+	- :code:`$(TEST_STATUS)` : type of test will execute
