@@ -2,13 +2,13 @@
 
 
 # Pandex versions release type
-The Pandex version contain four number that first number holds 1 ( or in
-some of repositories or documentations used 0 instead 1)
+The Pandex version has four numbers. the first number holds 1 ( or 0 in
+some of the repositories and documentations)
 
-The Pandex version available in the `conf.h` header .
+The Pandex version is available in `conf.h` header file.
 
 # Pandex development notes
-The Pandex development notes available in following files
+The Pandex development notes are available in the following files:
 * [contributing in Pandex](CONTRIBUTE.md)
 * [how to send a verified pull request in Pandex](PR.md)
 * [the structure of Pandex (development)](STRUCT.md)
