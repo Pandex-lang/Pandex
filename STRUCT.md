@@ -87,7 +87,7 @@ The `scanner.c` file contains the declarations from `scanner.h` which includes t
 
 
 
-The Symbol table holds variables `name`,`address` and `scope` becuase identfiers can contain more than one characters but lexer returns only one token for each identifier, so symbol table contains identifiers because identifiers' rel is `>= 1` or (`more than one` or `one`)
+The Symbol table holds variables `name`,`address` and `scope` becuase identfiers can contain more than one characters but lexer returns only one token for each identifier, so symbol table contains identifiers because identifiers' rel is `> 1` --- `1` or `more than one` or `one`
 
 Please research more about symbol table
 
