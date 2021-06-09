@@ -1,4 +1,4 @@
-CC = cc # gcc for me
+CC = cc # gcc|clang for me
 
 ROOT_PATH = ..
 
