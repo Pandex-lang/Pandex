@@ -1,16 +1,15 @@
 # Prerequirements
-The prerequirements for contribute in Pandex is understanding the `How It(Pandex) works` .
+The only prerequisite for contribution to Pandex is understanding `How It(Pandex) works` .
 
-but If you want to open a pull request see [pull requests notes](PR.md) file . the pull the pull request that has problem will closed or draft or always will be open , also I message you : "incorrect pull request" that means pull request closed .
+But If you want to open a pull request see [pull requests notes](PR.md) file .the pull requests that don't follow the contribution instructions, will be left open or potentially closed. Before the pull request is closed I'll send a message which includes complete explanations of why your pull request was closed.
 
 So first read the [Pandex structure ( How Pandex works )](STRUCT.md) and next read [PR.md](PR.md)
 
-Pull requests has problem
-* the pull request add bug/bugs
-* the pull request remove feature/features
+Following kinds of pull requests will never be accepted:
+* the pull requests that add bug/bugs
+* the pull requests that remove neccessry feature/features
 * etc .
 
 # NOTE 
-before opening a pull request send email for me
-
+before you open a pull request. please send me an email:
 <pooiaferdowsiisdeveloper@gmail.com>
