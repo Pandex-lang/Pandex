@@ -80,9 +80,21 @@ int main(){
 	if(type != alpha)
 		puts("getCharType(alpha) works uncorrec");
 		
-	puts("testing getCharNum function");
-	int num0 = getCharNum('0',false);
-	int num1 = getCharNum('1',false);
-	int num2 = getCharNum('5',false);
-	int num3 = getCharNum('9',false);
+	// puts("testing getCharNum function");
+	
+	puts("testing scan() function");
+	
+	if ( scan('a') == 'a'
+	&& scan('A') == 'A'
+	&& scan('Z') == 'Z'
+	&& scan('z') == 'z'
+	&& scan('q') == 'q'
+	&& scan('Q') == 'Q')
+	{
+		puts("scan() works correctly (YES)");
+	}
+	else
+	{
+		puts("scan() work uncorrect ( ERRRO)");	
+	}	 
 }

@@ -1,30 +1,24 @@
-#ifndef SYM_TBL_H
+// declurations of sym_tbl.c
+#ifndef SYM_TBL_H // header guard
 #define SYM_TBL_H
-// Pandex symbol table
-// Method = linked list ( no mixer )
-#ifndef _STDBOOL_H
-#   include <stdbool.h>
+
+#ifndef _STDBOOL_h
+#    include <stdbool.h>
 #endif
 
-struct symbol_table
+struct Symbol_table
 {
-    unsigned short int scope;
-    char *name;
-    char *value;
-    size_t addr; // address of variable in memory
-    struct symbol_table *next;
+	unsigned short int scope;
+	char *name;
+	char *value;
+	unsigned int addr;
+	struct Symbol_table *next;
 };
 
 
-struct symbol_table *main_app;
-
-
-bool lookup_symbol(char[]);
-bool insert_symbol(char[] , char[] , unsigned short int);
-
-size_t calculateAddressOfVariableInMemory();
-
-
-typedef struct symbol_table PandexSymbolTablesType; // JFN : Just for fun
-
+bool lookup_by_name(char*
+, struct Symbol_table *);
+/*
+bool inseeffeert(){return false;} // insert() insert a symbol into , \
+insert() returns the true if the insert is successful*/
 #endif

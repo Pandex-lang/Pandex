@@ -9,6 +9,7 @@ The Pandex version is available in `conf.h` header file.
 
 # Pandex development notes
 The Pandex development notes are available in the following files:
+
 * [contributing in Pandex](CONTRIBUTE.md)
 * [how to send a verified pull request in Pandex](PR.md)
 * [the structure of Pandex (development)](STRUCT.md)

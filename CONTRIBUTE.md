@@ -6,10 +6,12 @@ But If you want to open a pull request see [pull requests notes](PR.md) file .th
 So first read the [Pandex structure ( How Pandex works )](STRUCT.md) and next read [PR.md](PR.md)
 
 Following kinds of pull requests will never be accepted:
+
 * the pull requests that add bug/bugs
 * the pull requests that remove neccessry feature/features
 * etc .
 
 # NOTE 
-before you open a pull request. please send me an email:
-<pooiaferdowsiisdeveloper@gmail.com>
+[before you open a pull request. please send me an email:](mailto:pooiaferdowsiisdeveloper@gmail.com)
+
+[<pooiaferdowsiisdeveloper@gmail.com>](mailto:pooiaferdowsiisdeveloper@gmail.com)

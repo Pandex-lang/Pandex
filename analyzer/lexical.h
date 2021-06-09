@@ -41,7 +41,6 @@ enum operand {
 
 struct Tokenizer
 {
-
-    struct Tokenizer *next;
-    struct Tokenizer *prev;
+	struct Tokenizer *next;
+	struct Tokenizer *prev;
 };

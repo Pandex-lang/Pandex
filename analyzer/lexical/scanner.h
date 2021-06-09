@@ -91,7 +91,7 @@ int getCharTok(const char); // get the char token id \
 int getCharType(const char); // check if is alpha , numeric or token
 int getCharNum(const char , const bool isNegative);
 
-int _scan(const char);
+int _scan(const char , bool);
 
 int scan(const char);
 

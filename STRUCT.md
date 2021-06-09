@@ -1,4 +1,5 @@
 Pandex development is very deciplined so you should have a deep understaning of following topics:
+
 * lexical analyzer
 * syntax analyzer
 * semantic analyzer
@@ -7,9 +8,9 @@ Pandex development is very deciplined so you should have a deep understaning of 
 * tokens
 * QuI when Q = {1 ,2} and I = {a ,b}
 
-this language is developed based on اصول طراحی کامپایلر ها tutorials by جعفر پور امینی but you can learn the topics at [tutorialspoint.com course](https://www.tutorialspoint.com/compiler_design/index.htm)
+this language is developed based on `اصول طراحی کامپایلر ها` tutorials by `جعفر پور امینی` but you can learn the topics at [tutorialspoint.com course](https://www.tutorialspoint.com/compiler_design/index.htm)
 
-# Structur
+# Structure
 
 * The `conf.h` contain configurations
 * The `analyzer` directory contain lexical , syntax and semantic analyzers
@@ -26,10 +27,12 @@ The scanner checks the source and reads each character of it, then returns the c
 for $times
 ```
 The scanner returns:
-``` alpha(f)-alpha(o)-alpha(r)-whitespace-dollar_tok($)-alpha(t)-alpha(i)-alpha (m)-alpha(e)-alpha(s)-whitespace```
+
+```
+alpha(f)-alpha(o)-alpha(r)-whitespace-dollar_tok($)-alpha(t)-alpha(i)-alpha (m)-alpha(e)-alpha(s)-whitespace```
 **not it's an example only**
 
-The `scanner.c` file contains the declarations from `scanner.h` which includes the following list:
+The `scanner.c` file contain the `scanner.h` declurations that is following list
 * Tokens type and etc
 ```c
 #define alpha 0 // if character is alpha like a:b:c:d
@@ -78,7 +81,7 @@ The `scanner.c` file contains the declarations from `scanner.h` which includes t
 * int getCharType(char); // check if is alpha , numeric or token
 ```
 
-`scanner` headers are used in determinstic finite automaton
+`scanner` headers are used in recognizer (No determinstic finite automaton )
 
 # Symbol table
 * In `Analyzer directoy`
@@ -87,9 +90,10 @@ The `scanner.c` file contains the declarations from `scanner.h` which includes t
 
 
 
-The Symbol table holds variables `name`,`address` and `scope` becuase identfiers can contain more than one characters but lexer returns only one token for each identifier, so symbol table contains identifiers because identifiers' rel is `> 1` --- `1` or `more than one` or `one`
+The Symbol table holds variables `name`,`address` and `scope` becuase identfiers can contain more than one characters but lexer returns only one token for each identifier, so symbol table contains identifiers because identifiers' rel is `> 1` --- `1` or `more than one` to `one`
 
 Please research more about symbol table
 
+# Recognizer ( instead DFA ( Deterministic Finite Automaon))
 
-# DFA ( Deterministic Finite Automaon)
+

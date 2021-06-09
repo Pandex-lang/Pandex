@@ -1,7 +1,7 @@
 Pandex tests
 =============
 
-* in the `test` directory I push Pandex tests
+* in the :code:`test` directory I push Pandex tests
 
 but How their works ? How use them ?
 -------------------------------------

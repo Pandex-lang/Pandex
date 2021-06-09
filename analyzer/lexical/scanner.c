@@ -207,7 +207,7 @@ that read the source and
 scan source and return the
 id of token/kwd/var .
 */
-int _scan(const char src)
+int _scan(const char src , bool isItIsNumber_Type)
 {
     //
     size_t type = getCharType(src); // getCharType return the type to integer : \
@@ -216,7 +216,7 @@ int _scan(const char src)
     if(type == token)
         return getCharTok(src);
     if (type == number )
-    	return getCharNum(src , false);
+    	return getCharNum(src , isItIsNumber_Type);
     if (type == alpha )
     	return alpha;
 
@@ -239,7 +239,7 @@ tokens
 */
 
 int scan(const char source){
-	size_t result = _scan(source);
+	size_t result = _scan(source,false);
 	if ( result == alpha){
 		return source;
 
@@ -265,9 +265,12 @@ int scan_kwd(const char source[]){
 	 
 	char *ptr = malloc(length); // new string
 	int ptr_cur_pos = 0; // position of new string
+
 	for(size_t i = 0; i < length; i++)
 	{
-		if ( source[i] != ' ')
+		if ( source[i] != ' '
+		&& source[i] != '\n'
+		&& source[i] != '\t')
 			ptr[ptr_cur_pos++] = source[i];
 	}
 	
