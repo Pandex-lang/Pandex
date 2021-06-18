@@ -1,5 +1,14 @@
 # The Pandex programming language version 1.0.0.3
 
+# How to build 
+for build see the `build` directory and run the shell script inside it
+
+then run
+```
+./p file
+```
+and Pandex generate lexer. 
+
 
 # Pandex versions release type
 The Pandex version has four numbers. the first number holds 1 ( or 0 in
