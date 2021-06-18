@@ -1,0 +1,2 @@
+gcc -c ../analyzer/lexical/scanner.c ../analyzer/lexical/sym_tbl.c ../analyzer/lexical.c
+gcc lexical.o scanner.o sym_tbl.o -o p
