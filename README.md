@@ -1,3 +1,7 @@
+# Pandex comes soon in near future!
+
+_PLEASE_ __WAIT__
+<!--
 # The Pandex programming language version 1.0.0.3
 
 # How to build 
@@ -28,3 +32,4 @@ The Pandex development notes are available in the following files:
 # Pandex minimum documentation ( beginners )
 
 # Pandex full documentation ( prefossionals )
+-->
